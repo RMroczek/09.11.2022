@@ -1,0 +1,123 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-family: 'Comic Sans MS';  
+}
+body img {
+    position: absolute;
+    opacity: 80%;
+    filter: blur(1.5px);
+}
+.container {
+    width: 970px;
+    height: 600px;
+    margin: auto;
+    padding-top: 10px;
+}
+#photo1 {
+    width: 200px;
+    height: 140px;
+    overflow: hidden;
+    margin: 50px; 
+    float: left;
+}
+#photo1 img {
+    filter: blur();
+    filter: opacity(100%);
+    width: 200px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+#photo1 img:hover {
+    animation: faint;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+}
+.menu {
+    position: relative;
+    background-color: black;
+    height: 80px;
+    width: 970px;
+    border-radius:20px;
+    border: 5px black solid;
+}
+.exmenu {
+    position: relative;
+    margin: auto;
+    width: 600px;
+    height: 60px;
+}
+.opmenu {
+    position: relative;
+    padding: 5px;
+    width: 70px;
+    height: 30px;
+    margin: 5px;
+    float: left;
+    color: white;
+    text-align: center;
+}
+.opmenu:hover {
+    background-color: gray;
+    border-radius:20px;
+    border: 5px gray solid;
+    animation-name: opa;
+    animation-duration: 0.3s;
+}
+@keyframes opa {
+    from {opacity: 0;}
+    to {opacity: 255;}
+  }
+@keyframes faint {
+    from {filter: brightness(95%);}
+    to {filter: brightness(60%);}
+  }
+
+.content {
+    position: relative;
+    width: 960px;
+    height: 490px;
+    background-color: rgba(0, 0, 0, 0.700);
+    margin-top: 20px;
+    border-radius:20px;
+    border: 5px rgba(0, 0, 0, 0.100) solid;
+}
+.mainpage {
+    position: relative;
+    text-align: center;
+    width: 960px;
+    padding-top: 10px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.700);
+    margin-top: 20px;
+    border-radius:20px;
+    border: 5px rgba(0, 0, 0, 0.100) solid;
+}
+.mainpage:hover {
+    animation: faint;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+#photo2 {
+    width: 200px;
+    height: 140px;
+    overflow: hidden;
+    margin: 5px; 
+    text-align: center;
+}
+#photo2 img {
+    width: 720px;
+    filter: blur();
+    filter: opacity(1);
+    border: solid 1px black;
+    border-radius: 10px;
+}
